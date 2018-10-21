@@ -1,5 +1,4 @@
 import os
-import json
 from binaryninja import *
 import r2pipe
 
@@ -19,6 +18,8 @@ def run_plugin(bv, addr):
     except Exception as err:
         if str(err) == "ERROR: Cannot find radare2 in PATH":
             print("Please add the location of your radare2 binary to your PATH variable")
+        else:
+            print(err)
 
 PluginCommand.register_for_function(
   "Decompile function",
