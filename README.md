@@ -2,7 +2,7 @@
 
 ### What this is
 
-This is a simple plugin that just invokes the radare2 plugin, `r2dec`, which is an awesome (and free!) decompiler.
+This is a simple plugin that just invokes the radare2 plugin, `r2dec` (an awesome decompiler), in Binary Ninja. This unfortunately does not preserve any comments or names you've given to variables and functions. Maybe one day...
 
 ### Requirements
 
